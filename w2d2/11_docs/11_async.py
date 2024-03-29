@@ -124,7 +124,7 @@ for model_response in test_async:
             print(output.text)
 
 #############################################################################
-# ------------- Finalne odtworzone przykładu w wersji asynchronicznej
+# ------------- Final piece of code to simulate typescript example
 #############################################################################
 import json
 import asyncio
