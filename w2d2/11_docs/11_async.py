@@ -64,7 +64,7 @@
 #############################################################################
 # ------------- EXAMPLE TO USE ASYNC VERSION OF FUNCTIONS
 #############################################################################
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 model = ChatOpenAI()
 docs = [
@@ -129,7 +129,7 @@ for model_response in test_async:
 import json
 import asyncio
 from langchain.document_loaders import TextLoader
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.docstore.document import Document
 from langchain.schema import HumanMessage, SystemMessage
 
@@ -137,6 +137,8 @@ loader = TextLoader("docs.md")
 doc = loader.load()[0]
 documents = [Document(page_content=content) for content in doc.page_content.split("\n\n")]
 print(documents)
+
+from langchain_core.runnables.config import RunnableConfig
 
 model = ChatOpenAI()
 
