@@ -38,5 +38,5 @@ def replace_urls(doc):
 for doc in docs:
     replace_urls(doc)
 
-with open("12_web/docs.json", "w") as f:
+with open("docs.json", "w") as f:
     json.dump(docs, f, indent=2)
