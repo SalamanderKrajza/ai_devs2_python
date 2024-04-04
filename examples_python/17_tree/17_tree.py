@@ -25,7 +25,7 @@ conversation = [
 
 async def chat_and_log(message: str) -> str:
     conversation.append(HumanMessage(content=message))
-    result = await chat.agenerate(conversation)
+    result = await chat.agenerate([conversation])
     ai_message = result.generations[0][0].text
     conversation.append(AIMessage(content=ai_message))
     return ai_message
@@ -35,6 +35,9 @@ await chat_and_log("Extend each solution by deepening the thought process. Gener
 await chat_and_log("For each scenario, generate a list of tasks that need to be done to implement the solution.")
 await chat_and_log("Based on the evaluations and scenarios, rank the solutions in order. Justify each ranking and offer a final solution.")
 
-conversation_text = "\n\n".join(f"## {message._get_type()}:\n\n{message.content}" for message in conversation)
-with open("17_tree/result.md", "w") as file:
+conversation_text = "\n\n".join(f"## {message.type}:\n\n{message.content}" for message in conversation)
+with open("result.md", "w") as file:
     file.write(conversation_text)
+
+
+conversation[0].type

@@ -4,12 +4,15 @@ from task_handler import get_task_token, get_task_info_from_token, send_answer_b
 from dotenv import load_dotenv
 load_dotenv()   
 
-######## ZADANIE
-
-# Get task info
+# --------------------------------------------------------------
+# Get task data
+# --------------------------------------------------------------
 task_token = get_task_token(taskname='inprompt', apikey=apikey)
 task_data = get_task_info_from_token(task_token)
 
+# --------------------------------------------------------------
+# Prepare answer
+# --------------------------------------------------------------
 question = task_data['question']
 print(question)
 
@@ -49,9 +52,11 @@ answer = model([
 print(answer)
 
 
-#prepare answer
 data = {"answer": answer}
 
-#Send answer
+
+# --------------------------------------------------------------
+# send answer
+# --------------------------------------------------------------
 response = send_answer_by_task_token(task_token, data)
 

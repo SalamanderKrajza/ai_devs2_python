@@ -32,7 +32,7 @@ def get_task_info_from_token(task_token):
         print(response.json())
         return response.json()
     else:
-        print(f"Błąd: Nie udało się uzyskać tokenu.")
+        print(f"Błąd: Nie udało się danych o zadaniu")
         return False
     
 # Send answer

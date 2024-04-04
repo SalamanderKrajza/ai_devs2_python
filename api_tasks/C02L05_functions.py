@@ -9,10 +9,10 @@ task_token = get_task_token(taskname='functions', apikey=apikey)
 task_data = get_task_info_from_token(task_token)
 import json
 print(json.dumps(task_data, indent=4))
+
 # --------------------------------------------------------------
 # Prepare answer
 # --------------------------------------------------------------
-
 answer = {
             "name": "addUser",
             "description": "add user to database",
