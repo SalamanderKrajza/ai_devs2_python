@@ -22,14 +22,16 @@ def get_task_token(taskname, apikey):
         return False
     
 # Get your task data from task_token
-def get_task_info_from_token(task_token):
+def get_task_info_from_token(task_token, enable_printing=True):
     url = f'https://tasks.aidevs.pl/task/{task_token}'
     response = requests.post(url)
-    print("Status: ", response.status_code)
+    if enable_printing:
+        print("Status: ", response.status_code)
 
     if response.status_code == 200:
-        print("Odpowiedź: \n")
-        print(response.json())
+        if enable_printing:
+            print("Odpowiedź: \n")
+            print(response.json())
         return response.json()
     else:
         print(f"Błąd: Nie udało się danych o zadaniu")

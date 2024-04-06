@@ -7,8 +7,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C03L02/C05L05]: 
-![48%](https://geps.dev/progress/48)
+####  Progress [C03L03/C05L05]: 
+![52%](https://geps.dev/progress/52)
 
 
 
@@ -46,10 +46,10 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | 18_knowledge | [Python](examples_python/18_knowledge/18.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/18_knowledge/18.ts) | ✅DONE |
 | 19_llama | [Python](examples_python/19_llama/19.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/19_llama/19.ts) | ❌WAITING |
 | 20_catch | [Python](examples_python/20_catch/20.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/20_catch/20.ts) | ✅DONE |
-| 21_similarity | [Python](examples_python/21_similarity/21.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/21_similarity/21.ts) | ❌WAITING |
-| 22_simple | [Python](examples_python/22_simple/22.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/22_simple/22.ts) | ❌WAITING |
-| 23_fragmented | [Python](examples_python/23_fragmented/23.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/23_fragmented/23.ts) | ❌WAITING |
-| 24_files | [Python](examples_python/24_files/24.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/24_files/24.ts) | ❌WAITING |
+| 21_similarity | [Python](examples_python/21_similarity/21.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/21_similarity/21.ts) | ✅DONE |
+| 22_simple | [Python](examples_python/22_simple/22.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/22_simple/22.ts) | ✅DONE |
+| 23_fragmented | [Python](examples_python/23_fragmented/23.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/23_fragmented/23.ts) | ✅DONE |
+| 24_files | [Python](examples_python/24_files/24.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/24_files/24.ts) | ✅DONE |
 | 25_correct | [Python](examples_python/25_correct/25.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/25_correct/25.ts) | ❌WAITING |
 | 26_summarize | [Python](examples_python/26_summarize/26.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/26_summarize/26.ts) | ❌WAITING |
 | 27_qdrant | [Python](examples_python/27_qdrant/27.py) | [TypeScript](https://github.com/i-am-alice/2nd-devs/blob/main/27_qdrant/27.ts) | ❌WAITING |
@@ -70,6 +70,8 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C02L05 | [C02L05_functions.py](api_tasks/C02L05_functions.py) | [course_api_only] | Example of writing function definition for openai |
 | C03L01 | [C03L01_rodo.py](api_tasks/C03L01_rodo.py) | [course_api_only] | Example of writing prompt that will suggest model to do something |
 | C03L02 | [C03L02_scraper.py](api_tasks/C03L02_scraper.py) | [langchain][webscrap] | Example of trying to gather data from server that may have some basic prevention/random errors |
+| C03L03 | [C03L03_whoami.py](api_tasks/C03L03_whoami.py) | [langchain][ConversationChain] | Task to practice with store chat history/using ConversationChain |
+
 
 # Chat_tasks
 They are saved mostly for searching for specific prompt examples.
