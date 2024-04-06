@@ -1,4 +1,26 @@
 ##################################################
+# ------------- Example4 - using get_numtokens_from_messages
+##################################################
+from langchain_openai import ChatOpenAI
+from langchain.schema import  SystemMessage
+
+model = ChatOpenAI(model_name="gpt-3.5-turbo")
+
+messages = [
+    SystemMessage("Cześć, to jest test!")
+]
+
+# Calculate number of prompt tokens
+num_tokens = model.get_num_tokens_from_messages(messages)
+print(f"Wyliczone tokeny wg LangChain: {num_tokens}")
+
+# Test if calculations are correct
+response = model.invoke(messages)
+tokens_used = response.response_metadata['token_usage']['prompt_tokens']
+print(f"Zuzyte tokeny wg LangChain: {tokens_used}")
+
+
+##################################################
 # ------------- Example4 - Tiktoken with library only (not as precise as example from repo)
 ##################################################
 text_to_check = "Cześć, to jest test!"
@@ -9,6 +31,7 @@ list_of_tokens = encoding.encode(text_to_check)
 number_of_tokens = len(list_of_tokens)
 
 print(list_of_tokens, number_of_tokens)
+
 
 ##################################################
 # ------------- Example4 - Tiktoken more precise calculations
