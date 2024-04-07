@@ -65,4 +65,3 @@ IndexHNSW (Hierarchical Navigable Small World):
 
 # Summary
 In summary, the pre-built index enables fast similarity search by organizing the vectors in a way that allows for efficient retrieval. By using optimized algorithms, data structures, and approximation techniques, FAISS avoids comparing the query vector against every vector in the dataset, leading to faster search times compared to exhaustive linear scans.
-Claud

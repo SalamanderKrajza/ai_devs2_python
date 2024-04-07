@@ -3,7 +3,6 @@ import html2text
 from bs4 import BeautifulSoup
 import json
 import re
-from typing import List
 from langchain.docstore.document import Document
 from helpers import extract_links_to_metadata
 

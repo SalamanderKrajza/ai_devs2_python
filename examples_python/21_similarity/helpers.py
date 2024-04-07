@@ -1,6 +1,6 @@
 import os
 from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.document_loaders import TextLoader
 from langchain.docstore.document import Document
 
