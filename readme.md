@@ -7,8 +7,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C03L04/C05L05]: 
-![56%](https://geps.dev/progress/56)
+####  Progress [C03L05/C05L05]: 
+![60%](https://geps.dev/progress/60)
 
 
 
@@ -74,6 +74,8 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C03L02 | [C03L02_scraper.py](api_tasks/C03L02_scraper.py) | [langchain][webscrap] | Example of trying to gather data from server that may have some basic prevention/random errors |
 | C03L03 | [C03L03_whoami.py](api_tasks/C03L03_whoami.py) | [langchain][ConversationChain] | Task to practice with store chat history/using ConversationChain |
 | C03L04 | [C03L04_search.py](api_tasks/C03L04_search.py) | [qdrant][embeddings][similarity search][vector database] | Embeddings creation, indexation and performing similarity search for dynamic context generation for LLM with qdrant |
+| C03L05 | [C03L05_people.py](api_tasks/C03L05_people.py) | [pandas][langchain][filtering data] | Filtering only desired context for llm (in my case using PANDAS DATAFRAME) |
+
 
 
 

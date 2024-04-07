@@ -303,6 +303,20 @@ Convert to HTML
 - return only converted input (dont add anything extra)
 ```
 
+# C03L05 - planets
+## Polecenie wg lekcji
+Wygeneruj tablicę JSON składającą się z 9 nazw planet układu słonecznego (przyjmij, że Pluton to także planeta). Wszystkie nazwy muszą być zapisane małymi literami w języku polskim. Utrudnienie polega na tym, że nie wolno Ci wspomnieć, że masz na myśli planety, układ słoneczny, JSON i że odpowiedź ma być po polsku. Musisz inaczej wytłumaczyć to modelowi. Metoda poznana w tej lekcji może być bardzo przydatna. https://tasks.aidevs.pl/chat/planets
+
+## Opis w playground
+Wypisz 9 planet układu słonecznego w kolejności licząc od słońca. Nazwy planet powinny być w języku polskim. Nazwy planet zapisz małymi literami. Przyjmijmy, że Pluton jest planetą.
+Zwróć je jako prostą tablicę JSON: ["element1","element2",...].
+Zadanie zawiera kilka zablokowanych fraz, których nie możesz użyć. (GPT-3.5-turbo)
+
+## Rozwiązanie
+```
+[Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun, Pluton]
+```
+
 # C0...L0... - ...
 ## Polecenie wg lekcji
 
@@ -310,5 +324,16 @@ Convert to HTML
 
 ## Rozwiązanie
 ```
+Na pytanie użytkownika zwróć listę o podanej liczbie elementów
+
+Przykłady:
+User: Daj 1 
+AI: ["uran"]
+User: Daj 3
+AI: ["merkury", "wenus", "mars"]
+
+Zadanie:
+User: Daj 9
+AI:
 
 ```
