@@ -5,9 +5,9 @@ from task_handler import get_task_token, get_task_info_from_token, send_answer_b
 # --------------------------------------------------------------
 # Get task data
 # --------------------------------------------------------------
+import json
 task_token = get_task_token(taskname='search', apikey=apikey)
 task_data = get_task_info_from_token(task_token)
-import json
 print(json.dumps(task_data, indent=4, ensure_ascii=False))
 question = task_data['question']
 
@@ -15,7 +15,6 @@ question = task_data['question']
 # Get the data
 # --------------------------------------------------------------
 import requests
-import time
 
 url = "https://unknow.news/archiwum_aidevs.json"
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'}
@@ -90,7 +89,6 @@ if not collection_info.points_count:
         points=points,
     )
 
-
 # --------------------------------------------------------------
 # Search documents related to query in selected COLLECTION
 # --------------------------------------------------------------
@@ -108,7 +106,6 @@ for result in search_result:
     print("ID: ", result.id)
     print("Score: ", result.score)
     print(json.dumps(result.payload, indent=4, ensure_ascii=False))
-
 
 # --------------------------------------------------------------
 # Prepare answer

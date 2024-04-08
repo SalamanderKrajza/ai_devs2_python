@@ -51,9 +51,7 @@ answer = model([
 ]).content
 print(answer)
 
-
 data = {"answer": answer}
-
 
 # --------------------------------------------------------------
 # send answer

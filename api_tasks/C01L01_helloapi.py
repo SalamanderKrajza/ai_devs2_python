@@ -1,3 +1,5 @@
+import sys
+sys.path.append(r'..')
 from task_handler import get_task_token, get_task_info_from_token, send_answer_by_task_token, apikey
     
 # --------------------------------------------------------------

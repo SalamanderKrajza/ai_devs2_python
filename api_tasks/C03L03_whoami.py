@@ -130,9 +130,9 @@ for hint_number in range(1, 11):
     if 'hint' in task_data:
         hint = task_data['hint']
     else:
-        print("#" * 50)
-        print(f"AFTER {hint_number} HINTS WE HAVE THE RESPONSE !\n", response)
+        print("#"*50,"\nToken is not active anyomore")
         break
+
     human_message = f"Hint{hint_number}: {hint}"
     print("Human:", human_message)
 
@@ -207,7 +207,6 @@ conversation = ConversationChain(
     # verbose=True # Prints all messages while predicting response
 )
 
-
 for hint_number in range(1, 11):
     # --------------------------------------------------------------
     # Add next hint to the conversation
@@ -216,12 +215,11 @@ for hint_number in range(1, 11):
     if 'hint' in task_data:
         hint = task_data['hint']
     else:
-        print("#" * 50)
-        print(f"AFTER {hint_number} HINTS WE HAVE THE RESPONSE !\n", response)
+        print("#"*50,"\nToken is not active anyomore")
         break
+
     human_message = f"Hint{hint_number}: {hint}"
     print("Human:", human_message)
-
 
     # --------------------------------------------------------------
     # Get model answer (it's automaticaly saved to memory)
@@ -290,9 +288,9 @@ for hint_number in range(1, 11):
     if 'hint' in task_data:
         hint = task_data['hint']
     else:
-        print("#" * 50)
-        print(f"AFTER {hint_number} HINTS WE HAVE THE RESPONSE !\n", response)
+        print("#"*50,"\nToken is not active anyomore")
         break
+
     human_message = f"Hint{hint_number}: {hint}"
     print("Human:", human_message)
 

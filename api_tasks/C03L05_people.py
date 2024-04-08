@@ -5,9 +5,9 @@ from task_handler import get_task_token, get_task_info_from_token, send_answer_b
 # --------------------------------------------------------------
 # Get task data
 # --------------------------------------------------------------
+import json
 task_token = get_task_token(taskname='people', apikey=apikey)
 task_data = get_task_info_from_token(task_token)
-import json
 print(json.dumps(task_data, indent=4, ensure_ascii=False))
 question = task_data['question']
 
@@ -15,14 +15,12 @@ question = task_data['question']
 # Get the data
 # --------------------------------------------------------------
 import requests
-import time
 
 url = "https://tasks.aidevs.pl/data/people.json"
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'}
 response = requests.get(url, headers=headers)
 
 content = json.loads(response.text)
-
 
 # --------------------------------------------------------------
 # Convert it into pandas (mostly because i am used to it)
@@ -32,18 +30,16 @@ df = pd.DataFrame(content)
 df['osoba'] = df['imie'] + " "+ df['nazwisko']
 df
 
-
 # --------------------------------------------------------------
 # Get person info
 # --------------------------------------------------------------
 from langchain_openai import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
-chat = ChatOpenAI(model_name='gpt-3.5-turbo')
 
 chat = ChatOpenAI()
 response = chat.invoke(input=
             [
-                SystemMessage("Podaj tylko imię i nazwisko osoby z pytania"),
+                SystemMessage("pełna forma imienia i nazwisko, nie odpowiadaj na pytanie użytkownika, podaj tylko imię i nazwisko osoby z pytania"),
                 HumanMessage(question)
             ]
     )

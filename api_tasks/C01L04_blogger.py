@@ -1,3 +1,5 @@
+import sys
+sys.path.append(r'..')
 from task_handler import get_task_token, get_task_info_from_token, send_answer_by_task_token, apikey
     
 # --------------------------------------------------------------
@@ -9,6 +11,7 @@ task_data = get_task_info_from_token(task_token)
 # --------------------------------------------------------------
 # Prepare answer
 # --------------------------------------------------------------
+import openai
 outline = task_data['blog']
 outline_with_numbers = []
 for index, element in enumerate(outline, 1):
@@ -19,7 +22,6 @@ outline_with_numbers
 models = ["gpt-4", "gpt-3.5-turbo"]
 model = models[1]
 
-import openai
 # openai.api_key = openai_apikey #Needed if OPENAI_API_KEY has different name
 
 output=[]

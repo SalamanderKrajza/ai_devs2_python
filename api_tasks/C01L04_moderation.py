@@ -35,7 +35,6 @@ for input in prompts:
         answer.append(0)
 print(answer)
 
-#prepare answer
 data = {"answer": answer}
 
 # --------------------------------------------------------------
