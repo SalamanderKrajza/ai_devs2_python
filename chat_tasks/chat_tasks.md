@@ -314,16 +314,6 @@ Zadanie zawiera kilka zablokowanych fraz, których nie możesz użyć. (GPT-3.5-
 
 ## Rozwiązanie
 ```
-[Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun, Pluton]
-```
-
-# C0...L0... - ...
-## Polecenie wg lekcji
-
-## Opis w playground
-
-## Rozwiązanie
-```
 Na pytanie użytkownika zwróć listę o podanej liczbie elementów
 
 Przykłady:
@@ -335,5 +325,15 @@ AI: ["merkury", "wenus", "mars"]
 Zadanie:
 User: Daj 9
 AI:
+
+```
+
+# C0...L0... - ...
+## Polecenie wg lekcji
+
+## Opis w playground
+
+## Rozwiązanie
+```
 
 ```

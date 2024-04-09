@@ -18,10 +18,11 @@ It will contains few modules:
 | Module | Description |
 | --- | --- |
 | [examples_python](examples_python) | python implementations of optional course examples covering OpenAI, Langchain, vector databases, and similarity search. The goal is to recreate the functionality presented in TS examples with Python. |
-| [api_tasks](api_tasks) | python implementations of tasks required to complete this course. ||
+| [api_tasks](api_tasks) | python implementations of tasks required to complete this course. |
 | [chat_tasks](chat_tasks) | tasks completed on the course platform (which simulates a modified OpenAI playground). Contains a task descriptions and list of my attempts for future reference. |
 | [docs](docs) | Additional descriptions and theory researched and documented while completing the course. Generaly things useful for future reference in upcoming examples, produced while i was processing knowledge. |
 | [own_testing](own_testing) | some kind of sandbox with additional tests, libraries and methods methods comparations and trying different ways to achieve the same goals, kept for reference. |
+
 
 # Examples from lessons
 Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
@@ -78,7 +79,22 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C04L02 | [C04L02_tools.py](api_tasks/C04L02_tools.py) | [function_calling][langchain] | Another function_calling example to get correct json (Letting LLM determine incoming action). Also, adding extra systempromt with context to let model understand dates. |
 
 
-
 # Chat_tasks
 They are saved mostly for searching for specific prompt examples.
 I didn't see any reason to keep then in separated files so they are all available [here](chat_tasks/chat_tasks.md)
+| Lesson | Name | Description | status |
+| --- | --- | --- | --- |
+| C01L01 | [getinfo](chat_tasks/chat_tasks.md/#C01L01---getinfo) | Forcing ChatGPT to output the word BANANA without using that word in the prompt. Difficulties - some words are disabled in the prompt. | ✅DONE |
+| C01L02 | [maxtokens](chat_tasks/chat_tasks.md/#C01L02---maxtokens) | Providing the name of a river flowing through the capital of a given country, while staying within the max token limit. | ✅DONE |
+| C01L03 | [category](chat_tasks/chat_tasks.md/#C01L03---category) | Making ChatGPT assign an appropriate category (home/work/other) to a task and return the answer in JSON format. | ✅DONE |
+| C01L03 | [books](chat_tasks/chat_tasks.md/#C01L03---books) | Preparing a JSON array with book titles and authors using one-shot prompting with GPT-3.5-turbo. | ✅DONE |
+| C01L05 | [injection injection2](chat_tasks/chat_tasks.md/#C01L05---injection-injection2) | Using prompt injection to extract a secret word from the prompt, with increasing difficulty levels and models (GPT-3.5 and GPT-4). | ✅DONE |
+| C02L01 | [optimize](chat_tasks/chat_tasks.md/#C02L01---optimize) | Defining the 'system' field in a query to perform a given task while staying within the character limit, which is more challenging than token limit. | ✅DONE |
+| C02L01 | [fixit](chat_tasks/chat_tasks.md/#C02L01---fixit) | Convincing GPT-4 to fix and optimize provided source code, handle errors properly, and return zero for all incorrect inputs. | ✅DONE |
+| C02L02 | [parsehtml](chat_tasks/chat_tasks.md/#C02L02---parsehtml) | Extracting readable article text from HTML code (in paragraphs), converting it to Markdown format, and returning only the three paragraphs without any HTML code. | ✅DONE |
+| C02L03 | [structure](chat_tasks/chat_tasks.md/#C02L03---structure) | Preparing a prompt that works with both GPT-3.5-Turbo and GPT-4 models to generate a JSON object with a specific structure, taking into account the strengths and weaknesses of GPT-3.5-Turbo. | ✅DONE |
+| C02L05 | [cities](chat_tasks/chat_tasks.md/#C02L05---cities) | Generating a list of 7 interesting facts about a given city without using the city name in the prompt or the generated response, while working with the GPT-3.5-turbo model. | ✅DONE |
+| C03L01 | [tailwind](chat_tasks/chat_tasks.md/#C03L01---tailwind) | Writing a system message that returns a `<button>` element consistent with the user's message, ensuring the model's response contains only the `<button>` element without additional comments or tags. | ✅DONE |
+| C03L02 | [format](chat_tasks/chat_tasks.md/#C03L02---format) | Creating a converter from an old African markup language to HTML code, instructing GPT-3.5-turbo on how to handle and interpret the code. | ✅DONE |
+| C03L05 | [planets](chat_tasks/chat_tasks.md/#C03L05---planets) | Generating a JSON array consisting of 9 planet names in the solar system (including Pluto), with names in lowercase Polish, without mentioning planets, solar system, JSON, or the Polish language in the prompt. | ✅DONE |
+
