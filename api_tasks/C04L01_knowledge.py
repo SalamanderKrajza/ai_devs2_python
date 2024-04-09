@@ -52,7 +52,8 @@ select_source_schema = {
 }
 
 model_with_functions = ChatOpenAI(
-    model_name="gpt-4-0613",
+    # model_name="gpt-4-0613",
+    model_name="gpt-3.5-turbo",
     model_kwargs={
         "functions": [select_source_schema],
         "function_call": {"name": "select_source"}, 

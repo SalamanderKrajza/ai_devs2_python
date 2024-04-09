@@ -62,13 +62,9 @@ print("Odpowiedź: ", response.content)
 # --------------------------------------------------------------
 # Prepare answer
 # --------------------------------------------------------------
-# The task goal was to get URL relqted to user question
 data = {"answer": response.content}
 
 # --------------------------------------------------------------
 # send answer
 # --------------------------------------------------------------
 response = send_answer_by_task_token(task_token, data)
-
-
-
