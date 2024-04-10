@@ -1,3 +1,4 @@
+
 # What is AI DEVS 2
 Let's quothe the autors =)
 ```
@@ -7,8 +8,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C04L02/C05L05]: 
-![68%](https://geps.dev/progress/68)
+####  Progress [C04L03/C05L05]: 
+![72%](https://geps.dev/progress/72)
 
 
 # What is THIS REPO?
@@ -56,8 +57,8 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | 26_summarize | [Python](examples_python/26_summarize/26.py) |[snapshot](examples_python/26_summarize/26.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/26_summarize/26.ts) | ✅DONE |
 | 27_qdrant | [Python](examples_python/27_qdrant/27.py) |[snapshot](examples_python/27_qdrant/27.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/27_qdrant/27.ts) | ✅DONE |
 | 28_intent | [Python](examples_python/28_intent/28.py) |[snapshot](examples_python/28_intent/28.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/28_intent/28.ts) | ✅DONE |
-| 29_notify | [Python](examples_python/29_notify/29.py) |[snapshot](examples_python/29_notify/29.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/29_notify/29.ts) | ❌WAITING |
-| 30_youtube | [Python](examples_python/30_youtube/30.py) |[snapshot](examples_python/30_youtube/30.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/30_youtube/30.ts) | ❌WAITING |
+| 29_notify | [Python](examples_python/29_notify/29.py) |[snapshot](examples_python/29_notify/29.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/29_notify/29.ts) | ✅DONE |
+| 30_youtube | [Python](examples_python/30_youtube/30.py) |[snapshot](examples_python/30_youtube/30.py) | [orginal](https://github.com/i-am-alice/2nd-devs/blob/main/30_youtube/30.ts) | ✅DONE |
 
 # Api tasks
 | CHAPTER/LESSON | Task | Tags | Description |
@@ -77,6 +78,7 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C03L05 | [C03L05_people.py](api_tasks/C03L05_people.py) | [pandas][langchain][filtering data] | Filtering only desired context for llm (in my case using PANDAS DATAFRAME) |
 | C04L01 | [C04L01_knowledge.py](api_tasks/C04L01_knowledge.py) | [function calling][langchain][apis] | Connecting to different APIs basing on LLM decision (with function_calling) |
 | C04L02 | [C04L02_tools.py](api_tasks/C04L02_tools.py) | [function_calling][langchain] | Another function_calling example to get correct json (Letting LLM determine incoming action). Also, adding extra systempromt with context to let model understand dates. |
+| C04L03 | [C04L03_gnome.py](api_tasks/C04L03_gnome.py) | [langchain][vison][analyzing images] | Example using Vision model to let model analyze content of some image |
 
 
 # Chat_tasks
