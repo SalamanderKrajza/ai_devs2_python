@@ -8,8 +8,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C04L03/C05L05]: 
-![72%](https://geps.dev/progress/72)
+####  Progress [C04L04/C05L05]: 
+![76%](https://geps.dev/progress/76)
 
 
 # What is THIS REPO?
@@ -79,6 +79,8 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C04L01 | [C04L01_knowledge.py](api_tasks/C04L01_knowledge.py) | [function calling][langchain][apis] | Connecting to different APIs basing on LLM decision (with function_calling) |
 | C04L02 | [C04L02_tools.py](api_tasks/C04L02_tools.py) | [function_calling][langchain] | Another function_calling example to get correct json (Letting LLM determine incoming action). Also, adding extra systempromt with context to let model understand dates. |
 | C04L03 | [C04L03_gnome.py](api_tasks/C04L03_gnome.py) | [langchain][vison][analyzing images] | Example using Vision model to let model analyze content of some image |
+| C04L04 | [C04L04](api_tasks/C04L04) | [langchain][vison][analyzing images] |  |
+| C04L04 | [C04L04_ownapi.py](api_tasks/C04L04_ownapi.py) | [langchain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM |
 
 
 # Chat_tasks
