@@ -25,6 +25,18 @@ It will contains few modules:
 | [own_testing](own_testing) | some kind of sandbox with additional tests, libraries and methods methods comparations and trying different ways to achieve the same goals, kept for reference. |
 
 
+# Personal Notes, Tests, and Examples (doc + own_testing)
+| Lesson | Name | Description |
+| --- | --- | --- |
+| C01L04 | PYTHON 🐍<br>[different_connections_to_openai.py](own_testing/C01L04_different_connections_to_openai.py) | - Different ways to connect with OpenAI models using the OpenAI library and the requests library<br>    - Streaming example that prints the content of the response chunk by chunk as it is generated<br>    - Example of using the LangChain library to initialize a default model (gpt-3.5-turbo)<br>     |
+| C01L04 | PYTHON 🐍<br>[langchain_conversationchain.py](own_testing/C01L04_langchain_conversationchain.py) | - Two ways to create a conversation using the LangChain library with the OpenAI chat model<br>    - The first method manually creates a list to hold message objects (HumanMessage, SystemMessage, AIMessage) and appends them to the list as the conversation progresses<br>    - The second method uses the ConversationChain class implemented in LangChain, which automatically manages the conversation history using ConversationBufferMemory<br>    - Both methods allow for sending messages to the model and receiving responses, maintaining the context of the conversation<br>     |
+| C03L01 | MARKDOWN 📜<br>[async.md](docs/C03L01_async.md) | - Event loop in Python and its usage in Jupyter/interactive mode vs normal scripts<br>    - Document objects in langchain library<br>    - Sync (model.invoke) vs async (model.agenerate) methods for chat models<br>    - Code examples of async workflow with asyncio.gather<br>     |
+| C03L01 | MARKDOWN 📜<br>[simulating_max_cocurrency.md](docs/C03L01_simulating_max_cocurrency.md) | - Python's langchain library doesn't have a direct equivalent of the maxConcurrency parameter for the ChatOpenAI class<br>    - Concurrency can be controlled using Python's asyncio library and semaphores<br>    - The text provides a possible solution using asyncio.Semaphore to limit concurrency when generating descriptions for multiple documents<br>     |
+| C03L03 | MARKDOWN 📜<br>[FAISS_vetor_storing.md](docs/C03L03_FAISS_vetor_storing.md) | - FAISS (Facebook AI Similarity Search) is a library for efficient similarity search and clustering of dense vectors<br>    - It converts data into high-dimensional vectors using embeddings or feature extraction techniques<br>    - FAISS creates an index to enable fast similarity search by organizing the vectors for efficient retrieval<br>    - The pre-built index allows for quick similarity search when a query vector is provided, using optimized algorithms and parallelization to speed up the process<br>     |
+| C03L03 | JUPYTER NOTEBOOK 🐍+📜<br>[function_calling.ipynb](own_testing/C03L03_function_calling.ipynb) | - How to prepare functions and their schemas to be used with LLMs for function calling<br>    - Different ways to initialize models with function schemas using dictionaries, pydantic BaseModel or convert_to_openai_tool<br>    - Extracting function names and arguments from the model's response<br>    - Executing the selected function with the provided arguments<br>    - Comparison of function calling and prompt-with-examples approaches for solving a specific task<br>     |
+| C04L04 | JUPYTER NOTEBOOK 🐍+📜<br>[C04L04_README.md](/api_tasks/C04L04/C04L04_README.md) | - How we can host FLASK API and use ngrok to tunnel traffic to our local hosting<br>    - The process involves preparing a function to generate answers using LLM, creating a Flask API to handle user requests and return answers, and using ngrok to make the locally running app accessible over the internet<br>    - The text provides step-by-step instructions on how to set up the Flask API, configure ngrok, and complete the task by executing parts of the C04L04_ownapi.py file while the API is running<br>     |
+
+
 # Examples from lessons
 Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | Name | python version | typescript | typescript | status |
@@ -79,7 +91,6 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C04L01 | [C04L01_knowledge.py](api_tasks/C04L01_knowledge.py) | [function calling][langchain][apis] | Connecting to different APIs basing on LLM decision (with function_calling) |
 | C04L02 | [C04L02_tools.py](api_tasks/C04L02_tools.py) | [function_calling][langchain] | Another function_calling example to get correct json (Letting LLM determine incoming action). Also, adding extra systempromt with context to let model understand dates. |
 | C04L03 | [C04L03_gnome.py](api_tasks/C04L03_gnome.py) | [langchain][vison][analyzing images] | Example using Vision model to let model analyze content of some image |
-| C04L04 | [C04L04](api_tasks/C04L04) | [langchain][vison][analyzing images] |  |
 | C04L04 | [C04L04_ownapi.py](api_tasks/C04L04_ownapi.py) | [langchain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM |
 
 
