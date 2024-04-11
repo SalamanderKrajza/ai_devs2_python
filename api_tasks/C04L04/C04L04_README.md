@@ -2,9 +2,9 @@
 This task requires to create API that will answer requests by using LLM to prepare answer to his question.
 
 #### Used files
-- **api_tasks/C04L04/C04L04_README.md** - process description 
-- **api_tasks/C04L04/C04L04_FLASKAPI.py** - app that is preparing answer
-- **api_tasks/C04L04_ownapi.py** - task_functions that points external api to our app (to complete task in course)
+- **[api_tasks/C04L04/C04L04_README.md](C04L04_README.md)** - process description 
+- **[api_tasks/C04L04/C04L04_FLASKAPI.py](./C04L04_FLASKAPI.py)** - app that is preparing answer
+- **[api_tasks/C04L04_ownapi.py](../C04L04_ownapi.py)** - task_functions that points external api to our app (to complete task in course)
 
 
 # Steps to complete
