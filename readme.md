@@ -8,8 +8,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C04L05/C05L05]: 
-![80%](https://geps.dev/progress/80)
+####  Progress [C05L01/C05L05]: 
+![84%](https://geps.dev/progress/84)
 
 
 # What is THIS REPO?
@@ -93,6 +93,7 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C04L03 | [C04L03_gnome.py](api_tasks/C04L03_gnome.py) | [langchain][vison][analyzing images] | Example using Vision model to let model analyze content of some image |
 | C04L04 | [C04L04_ownapi.py](api_tasks/C04L04_ownapi.py) | [langchain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM |
 | C04L05 | [C04L05_ownapipro.py](api_tasks/C04L05_ownapipro.py) | [langchain][ConversationChain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM while holding user messages in memory |
+| C05L01 | [C05L01_meme.py](api_tasks/C05L01_meme.py) | [RenderForm][documents from templates] | Use renderform prepare template and generate images basing on this template |
 
 
 # Chat_tasks
