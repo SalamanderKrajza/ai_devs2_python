@@ -8,8 +8,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C05L01/C05L05]: 
-![84%](https://geps.dev/progress/84)
+####  Progress [C05L02/C05L05]: 
+![88%](https://geps.dev/progress/88)
 
 
 # What is THIS REPO?
@@ -34,7 +34,7 @@ It will contains few modules:
 | C03L01 | MARKDOWN 📜<br>[simulating_max_cocurrency.md](docs/C03L01_simulating_max_cocurrency.md) | - Python's langchain library doesn't have a direct equivalent of the maxConcurrency parameter for the ChatOpenAI class<br>    - Concurrency can be controlled using Python's asyncio library and semaphores<br>    - The text provides a possible solution using asyncio.Semaphore to limit concurrency when generating descriptions for multiple documents<br>     |
 | C03L03 | MARKDOWN 📜<br>[FAISS_vetor_storing.md](docs/C03L03_FAISS_vetor_storing.md) | - FAISS (Facebook AI Similarity Search) is a library for efficient similarity search and clustering of dense vectors<br>    - It converts data into high-dimensional vectors using embeddings or feature extraction techniques<br>    - FAISS creates an index to enable fast similarity search by organizing the vectors for efficient retrieval<br>    - The pre-built index allows for quick similarity search when a query vector is provided, using optimized algorithms and parallelization to speed up the process<br>     |
 | C03L03 | JUPYTER NOTEBOOK 🐍+📜<br>[function_calling.ipynb](own_testing/C03L03_function_calling.ipynb) | - How to prepare functions and their schemas to be used with LLMs for function calling<br>    - Different ways to initialize models with function schemas using dictionaries, pydantic BaseModel or convert_to_openai_tool<br>    - Extracting function names and arguments from the model's response<br>    - Executing the selected function with the provided arguments<br>    - Comparison of function calling and prompt-with-examples approaches for solving a specific task<br>     |
-| C04L04 | JUPYTER NOTEBOOK 🐍+📜<br>[C04L04_README.md](/api_tasks/C04L04/C04L04_README.md) | - How we can host FLASK API and use ngrok to tunnel traffic to our local hosting<br>    - The process involves preparing a function to generate answers using LLM, creating a Flask API to handle user requests and return answers, and using ngrok to make the locally running app accessible over the internet<br>    - The text provides step-by-step instructions on how to set up the Flask API, configure ngrok, and complete the task by executing parts of the C04L04_ownapi.py file while the API is running<br>     |
+| C04L04 | MARKDOWN 📜<br>[C04L04_README.md](/api_tasks/C04L04/C04L04_README.md) | - How we can host FLASK API and use ngrok to tunnel traffic to our local hosting<br>    - The process involves preparing a function to generate answers using LLM, creating a Flask API to handle user requests and return answers, and using ngrok to make the locally running app accessible over the internet<br>    - The text provides step-by-step instructions on how to set up the Flask API, configure ngrok, and complete the task by executing parts of the C04L04_ownapi.py file while the API is running<br>     |
 
 
 # Examples from lessons
@@ -94,6 +94,7 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C04L04 | [C04L04_ownapi.py](api_tasks/C04L04_ownapi.py) | [langchain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM |
 | C04L05 | [C04L05_ownapipro.py](api_tasks/C04L05_ownapipro.py) | [langchain][ConversationChain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM while holding user messages in memory |
 | C05L01 | [C05L01_meme.py](api_tasks/C05L01_meme.py) | [RenderForm][documents from templates] | Use renderform prepare template and generate images basing on this template |
+| C05L02 | [C05L02_optimaldb.py](api_tasks/C05L02_optimaldb.py) | [langchain][LLMLingua][context compresssion][context optimalization] | Multiple ways to optimize text data to contain less space. Testes methods was LLMLingua, asking LLM for optimize and asking LLM for summarization |
 
 
 # Chat_tasks
