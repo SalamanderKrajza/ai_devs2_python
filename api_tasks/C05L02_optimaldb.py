@@ -26,7 +26,7 @@ with open("C05L02/orginal_data.json", "w", encoding="utf-8") as file:
     json.dump(json_data, file, indent=4, ensure_ascii=False)
 
 # --------------------------------------------------------------
-# Optimize with LLMLingua to compress database [DONT WORK WITH TASK, works in playground]
+# [Solution 1]Optimize with LLMLingua to compress database 
 # --------------------------------------------------------------
 # LLMLingua is a library to optimize prompts by removing "not-important" words while keeping it meaningful to LLM
 # I just wanted to test how it will handle database optimization
@@ -51,7 +51,7 @@ with open("C05L02/compressed_prompt.txt", "w", encoding="utf-8") as file:
     file.write(comppressed_prompt_text)
 
 # --------------------------------------------------------------
-# Optimize json by LLM [DONT WORK WITH TASK, works in playground]
+# [Solution 2]Optimize json by LLM 
 # --------------------------------------------------------------
 from langchain_openai import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
@@ -91,7 +91,7 @@ with open("C05L02/optimized_data.json", "w", encoding="utf-8") as file:
     json.dump(optimized_data, file, indent=4, ensure_ascii=False)
 
 # --------------------------------------------------------------
-# Summarization instead of conversion [Works with task]
+# [Solution 3]Summarization instead of conversion
 # --------------------------------------------------------------
 from langchain_openai import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
@@ -129,9 +129,9 @@ with open("C05L02/summarized_data.json", "w", encoding="utf-8") as file:
 # prepare answer
 # --------------------------------------------------------------
 
-data={'answer':comppressed_prompt_text} # Works in playground, do not pass the task
-data={'answer':str(optimized_data)} # Works in playground, do not pass the task
-data={'answer':str(summarized_data)} # Works with task
+data={'answer':comppressed_prompt_text} 
+data={'answer':str(optimized_data)} 
+data={'answer':str(summarized_data)} 
 
 
 # --------------------------------------------------------------
