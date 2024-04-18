@@ -8,8 +8,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C05L02/C05L05]: 
-![88%](https://geps.dev/progress/88)
+####  Progress [C05L03/C05L05]: 
+![92%](https://geps.dev/progress/92)
 
 
 # What is THIS REPO?
@@ -95,6 +95,7 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C04L05 | [C04L05_ownapipro.py](api_tasks/C04L05_ownapipro.py) | [langchain][ConversationChain][api][flask][ngrok] | Create app that will catch post requests, extract user question and get answer from LLM while holding user messages in memory |
 | C05L01 | [C05L01_meme.py](api_tasks/C05L01_meme.py) | [RenderForm][documents from templates] | Use renderform prepare template and generate images basing on this template |
 | C05L02 | [C05L02_optimaldb.py](api_tasks/C05L02_optimaldb.py) | [langchain][LLMLingua][context compresssion][context optimalization] | Multiple ways to optimize text data to contain less space. Testes methods was LLMLingua, asking LLM for optimize and asking LLM for summarization |
+| C05L03 | [C05L03_google.py](api_tasks/C05L03_google.py) | [langchain][flask][ngrok][serpapi][google] | Preparing keywords from user question to execute search in google using serpapi lib |
 
 
 # Chat_tasks
