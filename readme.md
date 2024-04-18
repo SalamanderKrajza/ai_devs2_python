@@ -8,8 +8,8 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C05L03/C05L05]: 
-![92%](https://geps.dev/progress/92)
+####  Progress [C05L04/C05L05]: 
+![96%](https://geps.dev/progress/96)
 
 
 # What is THIS REPO?
@@ -96,6 +96,7 @@ Orginally available in typescript at https://github.com/i-am-alice/2nd-devs/
 | C05L01 | [C05L01_meme.py](api_tasks/C05L01_meme.py) | [RenderForm][documents from templates] | Use renderform prepare template and generate images basing on this template |
 | C05L02 | [C05L02_optimaldb.py](api_tasks/C05L02_optimaldb.py) | [langchain][LLMLingua][context compresssion][context optimalization] | Multiple ways to optimize text data to contain less space. Testes methods was LLMLingua, asking LLM for optimize and asking LLM for summarization |
 | C05L03 | [C05L03_google.py](api_tasks/C05L03_google.py) | [langchain][flask][ngrok][serpapi][google] | Preparing keywords from user question to execute search in google using serpapi lib |
+| C05L04 | [C05L04_md2html.py](api_tasks/C05L04_md2html.py) | [finetuning][openai] | Finetuning model to make it to convert bold element from MD to HTML in specific way |
 
 
 # Chat_tasks
