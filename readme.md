@@ -8,8 +8,10 @@ Całkowicie rezygnujemy z ChatGPT na rzecz bezpośredniego połączenia z modela
 API, budując dopasowane narzędzia zwiększające efektywność codziennych zadań.
 ```
 
-####  Progress [C05L04/C05L05]: 
-![96%](https://geps.dev/progress/96)
+####  Progress [C05L05/C05L05]: 
+| Progress | Certificate |
+| --- | --- |
+| ![100%](https://geps.dev/progress/100) | [certificate](https://credsverse.com/credentials/c0a45ee6-ae83-4a6b-9b1d-2df250204920) |
 
 
 # What is THIS REPO?
